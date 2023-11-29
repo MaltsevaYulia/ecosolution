@@ -1,0 +1,52 @@
+.text {
+  font-family: 'Fira Sans';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-width: 130px;
+
+  cursor: pointer;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  margin: auto;
+
+  border-radius: 500px;
+  border: 1px solid var(--green-color);
+  color: var(--text-color);
+  background-color: var(--green-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--gradient-green);
+}
+
+.btnText {
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+
+.round {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+}
