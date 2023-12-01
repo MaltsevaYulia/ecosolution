@@ -1,8 +1,9 @@
 import React from 'react'
+import css from './Customers.module.css'
 
 const Customers = () => {
   return (
-    <section>
+    <section className={css.section}>
       <h2 className="title">our satisfied customers</h2>
       <ul>
         <li>

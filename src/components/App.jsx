@@ -8,12 +8,15 @@ import Cases from './Cases/Cases';
 import FAQ from './FAQ/FAQ';
 import Customers from './Customers/Customers';
 import ContactUs from './ContactUs/ContactUs';
+import Footer from './Footer/Footer';
+import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 export const App = () => {
   return (
     <div>
       <Header />
-      <RenewableEnergy/>
+      <BurgerMenu/>
+      <RenewableEnergy />
       <About />
       <Values />
       <Electricity />
@@ -21,7 +24,8 @@ export const App = () => {
       <Cases />
       <FAQ />
       <Customers />
-      <ContactUs/>
+      <ContactUs />
+      <Footer />
     </div>
   );
 };

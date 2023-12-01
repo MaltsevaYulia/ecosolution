@@ -1,0 +1,82 @@
+.form {
+  background-color: var(--background-grey);
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.label {
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  color: var(--text-color);
+}
+
+.input {
+  width: 100%;
+  padding-bottom: 8px;
+  display: inline-block;
+  border: none;
+  background-color: var(--background-grey);
+  border-bottom: 1px solid #97d28b;
+  margin-top: 8px;
+
+  font-family: Fira Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: var(--text-color-secondary);
+}
+
+/* input {
+  margin-bottom: 28px;
+} */
+
+textarea {
+  margin-bottom: 16px;
+  height: 147px;
+}
+
+.form button {
+  margin-left: auto;
+  margin-right: 0;
+  min-width: 99px;
+}
+
+.errorContainer {
+height: 28px;
+}
+
+.error {
+  color: red;
+  font-family: Fira Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+
+.dbg {
+    font-family: FONTSPRING DEMO - All Round Gothic Thick;
+font-size: 33px;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: -0.04em;
+text-align: left;
+
+font-family: CA Saygon Text;
+font-size: 10px;
+font-weight: 400;
+line-height: 9px;
+letter-spacing: -0.04em;
+text-align: left;
+
+
+}

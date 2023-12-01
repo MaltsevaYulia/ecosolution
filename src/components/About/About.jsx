@@ -4,7 +4,7 @@ import css from "./About.module.css"
 const About = () => {
   return (
     <section className={css.section}>
-      <div className={css.border}>
+    
         <h2 className="title">LET’s start with small start with ourselves</h2>{' '}
         <article>
           <span>ECOSOLUTION </span>
@@ -27,7 +27,7 @@ const About = () => {
                       <p>xkukk</p>
                   </li>
               </ul>
-      </div>
+ 
     </section>
   );
 };

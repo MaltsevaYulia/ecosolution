@@ -9,16 +9,16 @@ export const AccordionItem = ({ faqItem, onClick, isOpen }) => {
     <li className="accordion-item">
       <button className="accordion-header" onClick={() => onClick()}>
         {!isOpen && (
-          <svg width="16" height="16">
+          <svg width="16" height="16" className="icon-accordion">
             <use href={`${sprite}#icon-add`} />
           </svg>
         )}
         {isOpen && (
-          <svg width="16" height="16">
+          <svg width="16" height="16" className="icon-accordion">
             <use href={`${sprite}#icon-minus`} />
           </svg>
-              )}
-              <span>{faqItem.q}</span>
+        )}
+        <span className='question'>{faqItem.q}</span>
       </button>
       <div
         className="accordion-collapse"

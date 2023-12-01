@@ -1,13 +1,15 @@
 .accordion {
-margin-top: 24px;
+  margin-top: 24px;
 }
+
+
 
 .accordion-item {
   margin-bottom: 16px;
   background-color: #ffffff;
   padding-top: 16px;
-  border-top:1px solid var(--green-color);
-
+  border-top: 1px solid var(--green-color);
+  background-color: inherit;
 }
 
 .accordion-header {
@@ -27,6 +29,12 @@ margin-top: 24px;
   line-height: 22px;
   letter-spacing: -0.04em;
   text-align: justify;
+  padding: 0;
+  background-color: var(--background-primary);
+}
+
+.question {
+  background-color: var(--background-primary);
 }
 
 .accordion-collapse {
@@ -40,13 +48,17 @@ margin-top: 24px;
 }
 
 .accordion-body {
- 
   font-family: 'Fira Sans';
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   letter-spacing: -0.04em;
   text-align: justify;
+}
+
+.icon-accordion {
+  width: 16px;
+  height: 16px;
 }
 
 /* .accordion-arrow {
