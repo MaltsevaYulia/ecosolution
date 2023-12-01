@@ -2,18 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Oswald:wght@400;700&display=swap');
 
-
 @font-face {
   font-family: 'FONTSPRING DEMO - All Round Gothic Thick';
-  src: url('assets/fonts/Fontspring-DEMO-allroundgothic-thick.otf') format('truetype');
+  src: url('assets/fonts/Fontspring-DEMO-allroundgothic-thick.otf')
+    format('truetype');
 }
 @font-face {
   font-family: 'CA Saygon Text';
   src: url('assets/fonts/CASaygonText-Bold.ttf') format('truetype');
 }
-
-
-
 
 :root {
   --text-color: #173d33;
@@ -22,7 +19,7 @@
   --green-light: #a2d28b;
   --orange-color: #ee763d;
   --background-color: #173d33;
-  --background-primary: #F3F5FA;
+  --background-primary: #f3f5fa;
   --background-grey: #eaedf1;
   --white-color: #fff;
 
@@ -37,6 +34,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -46,7 +44,6 @@ body {
   box-sizing: border-box;
   color: var(--text-color);
   background-color: var(--background-primary);
-
 
   @media screen and (min-width: 320px) {
     padding-top: 36px;
@@ -69,7 +66,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -124,12 +121,23 @@ img {
 /* main */
 
 .title {
-  font-family: Oswald;
-  font-size: 36px;
+  font-family: 'Oswald';
+  font-size: 28px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 28px;
   letter-spacing: 0em;
+  text-align: left;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
 
 /* burger */

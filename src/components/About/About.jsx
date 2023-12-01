@@ -1,12 +1,16 @@
+import TeamList from 'components/TeamList/TeamList';
 import React from 'react';
 import css from "./About.module.css"
 
 const About = () => {
   return (
-    <section className={css.section}>
-    
-        <h2 className="title">LET’s start with small start with ourselves</h2>{' '}
-        <article>
+    <section className={css.section} id="about">
+      <div className={css.container}>
+        <h2 className="title">
+          LET’s start with small
+          <br /> start with ourselves
+        </h2>
+        <article className={css.article}>
           <span>ECOSOLUTION </span>
           <span>
             is the largest group of companies in Western Ukraine, which is
@@ -19,15 +23,9 @@ const About = () => {
             investment projects, in particular small hydropower and biofuels,
             are constantly being developed and developed with existing objects.
           </span>
-              </article>
-              <ul>
-                  <li>
-                      <image />
-                      <p>xgkhkh</p>
-                      <p>xkukk</p>
-                  </li>
-              </ul>
- 
+        </article>
+      </div>
+      <TeamList/>
     </section>
   );
 };

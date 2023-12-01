@@ -5,10 +5,10 @@ import Hero1x768px from '../../assets/img/Hero1x768px.jpg';
 import Hero2x768px from '../../assets/img/Hero2x768px.jpg';
 import Hero1x1280px from '../../assets/img/Hero1x1280px.jpg';
 import Hero2x1280px from '../../assets/img/Hero2x1280px.jpg';
-import css from './RenewableEnergy.module.css';
+import css from './Main.module.css';
 import ButtonArrow from 'components/ButtonArrow/ButtonArrow';
 
-const About = () => {
+const Main = () => {
   return (
     <section className={css.section}>
       <div className={css.border}>
@@ -61,4 +61,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Main;

@@ -1,4 +1,4 @@
-import RenewableEnergy from './RenewableEnergy/RenewableEnergy';
+import Main from './Main/Main';
 import Header from "./Header/Header";
 import About from './About/About';
 import Values from './Values/Values';
@@ -9,14 +9,12 @@ import FAQ from './FAQ/FAQ';
 import Customers from './Customers/Customers';
 import ContactUs from './ContactUs/ContactUs';
 import Footer from './Footer/Footer';
-import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 export const App = () => {
   return (
     <div>
       <Header />
-      <BurgerMenu/>
-      <RenewableEnergy />
+      <Main />
       <About />
       <Values />
       <Electricity />
