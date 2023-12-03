@@ -1,27 +1,31 @@
 .footer {
   position: relative;
+  padding-top: 24px;
+  border-top: 1px solid var(--green-color);
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
 }
 
 .container {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-  
+    align-items: center;
   }
 }
 
 .btn {
-  position: absolute;
-  top: 0;
-  right: 0;
   cursor: pointer;
   text-decoration: none;
   border: none;
   border-radius: 500px;
   background-color: inherit;
   padding: 0;
-  @media screen and (min-width: 768px) {
-    position: static;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 28px;
+    right: 0;
   }
 }
 
@@ -55,7 +59,6 @@
   line-height: 19px;
   letter-spacing: -0.04em;
   color: var(--text-color);
-  
 }
 
 .wrapper {

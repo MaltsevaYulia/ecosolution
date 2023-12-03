@@ -24,13 +24,18 @@
   border-bottom: 1px solid #97d28b;
   margin-top: 8px;
 
-  font-family: Fira Sans;
+  font-family: 'Fira Sans';
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.04em;
   text-align: left;
   color: var(--text-color-secondary);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 /* input {
@@ -49,12 +54,12 @@ textarea {
 }
 
 .errorContainer {
-height: 28px;
+  height: 28px;
 }
 
 .error {
   color: red;
-  font-family: Fira Sans;
+  font-family: 'Fira Sans';
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -62,21 +67,18 @@ height: 28px;
   text-align: left;
 }
 
-
 .dbg {
-    font-family: FONTSPRING DEMO - All Round Gothic Thick;
-font-size: 33px;
-font-weight: 500;
-line-height: 40px;
-letter-spacing: -0.04em;
-text-align: left;
+  font-family: 'FONTSPRING DEMO - All Round Gothic Thick';
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  text-align: left;
 
-font-family: CA Saygon Text;
-font-size: 10px;
-font-weight: 400;
-line-height: 9px;
-letter-spacing: -0.04em;
-text-align: left;
-
-
+  font-family: 'CA Saygon Text';
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 9px;
+  letter-spacing: -0.04em;
+  text-align: left;
 }

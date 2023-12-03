@@ -31,11 +31,11 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <button type="button" className={css.btn}>
+        <a href="#main" className={css.btn}>
           <svg className={css.iconArrow} width="32" height="32">
             <use href={`${sprite}#icon-arrow-right-green`} />
           </svg>
-        </button>
+        </a>
       </div>
       <div className={css.wrapper}>
         <a

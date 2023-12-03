@@ -1,24 +1,29 @@
-import React from 'react'
-
-const text = ['Solar', 'Wind', 'Hydro', 'Thermal', 'Nuclear'];
+import { services } from 'constants/services';
+import React from 'react';
+import css from './Services.module.css';
 
 const Services = () => {
   return (
-    <section id="service">
-      <h2 className="title">The services we provide</h2>
-      <h3 className="title">
-        Development and implementation of renewable enviroMentally friendly
-        energy sources
-      </h3>
-      <ul>
-        {text.map(item => (
-          <li>
-            <p>{item}</p>
-          </li>
-        ))}
-      </ul>
+    <section id="service" className={css.section}>
+      <h2 className="title">
+        The services
+        <br /> we provide
+      </h2>
+      <div className={css.wrapper}>
+        <p className={css.text}>
+          Development and implementation of renewable enviroMentally friendly
+          energy sources
+        </p>
+        <ul className={css.list}>
+          {services.map(item => (
+            <li key={item} className={css.item}>
+              <p className={css.itemText}>{item}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
-}
+};
 
-export default Services
+export default Services;

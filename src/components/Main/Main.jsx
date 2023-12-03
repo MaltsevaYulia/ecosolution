@@ -10,7 +10,7 @@ import ButtonArrow from 'components/ButtonArrow/ButtonArrow';
 
 const Main = () => {
   return (
-    <section className={css.section}>
+    <section className={css.section} id="main">
       <div className={css.border}>
         <h2 className="title">RENEWABLE ENERGY For any task</h2>
         <div className={css.wrapper}>
@@ -23,10 +23,6 @@ const Main = () => {
         </div>
       </div>
       <address className={css.contacts}>
-        {/* <p className={css.text}>
-          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-        </p>
-        <p className={css.text}>office@ecosolution.com</p> */}
         <a
           href="https://www.google.com/maps/d/u/0/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=49.83104779596067%2C24.03532398042603&z=17"
           target="_blank"

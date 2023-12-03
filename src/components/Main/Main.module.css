@@ -72,3 +72,10 @@
   color: var(--text-color);
   /* font-style: normal; */
 }
+
+.wrapper button {
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}

@@ -1,5 +1,5 @@
 .section {
-    margin-bottom: 36px;
+  margin-bottom: 36px;
   @media screen and (min-width: 768px) {
     margin-bottom: 100px;
   }
@@ -9,11 +9,9 @@
 }
 
 .section h2 {
-   
   @media screen and (max-width: 768px) {
     margin-bottom: 36px;
   }
- 
 }
 
 .container {
@@ -22,12 +20,10 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    /* gap: 24px; */
     justify-content: space-between;
     margin-bottom: 100px;
   }
   @media screen and (min-width: 1280px) {
-    /* gap: 322px; */
     margin-bottom: 122px;
   }
 }
@@ -88,78 +84,110 @@
 }
 
 /* List */
+
 .list {
+  position: relative;
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Default: 2 columns for screens below 768px */
+  grid-template-columns: 1fr 1fr;
   grid-gap: 24px;
 }
 
 .item {
   padding: 12px;
   text-align: center;
-  position: relative;
   background-color: var(--background-grey);
 }
 
-@media (max-width: 767px) {
-  .item:nth-child(odd):before,
-  .item:nth-child(even):before {
-    content: ''; /* Clear content for even and odd li elements */
-  }
-
-  .item:nth-child(3):before,
-  .item:nth-child(4):before {
-    content: ''; /* Clear content for third and fourth li elements */
-    display: block;
-    margin-bottom: 20px; /* Adjust margin as needed */
-  }
-}
-
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .list {
-    grid-template-columns: repeat(
-      4,
-      1fr
-    ); /* 4 columns for screens 768px and above */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
   }
 
-  .item:nth-child(1),
-  .item:nth-child(2) {
-    grid-column: span 2; /* Make the first two li elements span 2 columns each */
+  .item:nth-child(3) {
+    grid-column: 3;
+    grid-row: 2;
   }
 
-  .item:nth-child(3):before,
-  .item:nth-child(4):before {
+  .item:nth-child(4) {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .item {
+   
+    height: 197px;
+  }
+
+  .list::before {
     content: '';
-    display: block;
+    background-image: url('../../assets/values/value1-768px-1x-min.jpg');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    grid-column: 3 / span 2; /* Занимаем 3 и 4 столбцы */
+    grid-row: 1; 
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    height: 100%;
-    background-size: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .list::after {
+    content: '';
+    background-image: url('../../assets/values/value2-768px-1x-min.jpg');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    grid-column: 1 / span 2; 
+    grid-row: 2; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 
-/* Add styles for the background images on the pseudo-elements */
-.item:nth-child(3):before {
-  background-image: url('../../assets/team/AndriiDuda1280px1x.jpg');
+@media screen and (min-width: 1280px) {
+  .list {
+    grid-gap: 48px;
+  }
 
-  background-repeat: no-repeat;
+  .item {
+    box-sizing: border-box;
+ 
+    height: 339px;
+  }
+
+  .list::before {
+    background-image: url('../../assets/values/value1-1280px-1x-min.jpg');
+    height: 339px;
+    /* background-size: cover; */
+  }
+
+  .list::after {
+    content: '';
+    background-image: url('../../assets/values/value2-1280px-1x-min.jpg');
+    height: 339px;
+    /* background-size: cover; */
+  }
 }
 
-.item:nth-child(4):before {
-  background-image: url('../../assets/team/AndriiDuda1280px1x.jpg');
-}
-
+/* ---------------------------------------------- */
 .titleWrapp {
   display: flex;
   align-items: center;
   gap: 4px;
+  margin-bottom: 33px;
+  @media (min-width: 768px) {
+    margin-bottom: 51px;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 94px;
+  }
 }
 
 .valueIcon {

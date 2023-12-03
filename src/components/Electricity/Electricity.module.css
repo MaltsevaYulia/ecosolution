@@ -1,4 +1,9 @@
+.section h2 {
+    text-align: center;
+}
+
 .wrapp {
+  position: relative;
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -12,6 +17,50 @@
   @media screen and (min-width: 1280px) {
     margin-top: 120px;
     margin-bottom: 120px;
+  }
+}
+
+.wrapp::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  top: -72px;
+  background-color: var(--green-color);
+}
+
+@media screen and (min-width: 768px) {
+  .wrapp::before {
+    height: 87px;
+    top: -111px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapp::before {
+    top: -104px;
+  }
+}
+
+.wrapp::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  bottom: -72px;
+  background-color: var(--green-color);
+}
+
+@media screen and (min-width: 768px) {
+  .wrapp::after {
+    height: 87px;
+    bottom: -111px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapp::after {
+    bottom: -104px;
   }
 }
 

@@ -12,7 +12,7 @@ import Footer from './Footer/Footer';
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Main />
       <About />
@@ -24,6 +24,6 @@ export const App = () => {
       <Customers />
       <ContactUs />
       <Footer />
-    </div>
+    </>
   );
 };

@@ -19,7 +19,6 @@
     height: calc(100vh - 72px);
   }
   @media screen and (min-width: 768px) {
- 
     right: 30px;
     top: 36px;
     bottom: 36px;
@@ -27,11 +26,10 @@
     height: calc(100vh - 72px);
   }
   @media screen and (min-width: 1280px) {
-   
     right: 100px;
     top: 24px;
     bottom: 24px;
-     height: calc(100vh - 48px);
+    height: calc(100vh - 48px);
   }
 }
 
@@ -96,9 +94,14 @@
   /* transition: all 250ms ease; */
 }
 
-.link:hover,
-.link:focus {
-  background: var(--gradient-green);
+.link:hover .linkText,
+.link:focus .linkText {
+  color: var(--green-color);
+}
+
+.link:hover .iconArrow,
+.link:focus .iconArrow {
+  stroke: var(--green-color);
 }
 
 .linkText {
@@ -112,4 +115,5 @@
 }
 
 .iconArrow {
+  stroke: #fff;
 }

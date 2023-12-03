@@ -1,0 +1,10 @@
+.section {
+  margin-bottom: 36px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 107px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 127px;
+  }
+}

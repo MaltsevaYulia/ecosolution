@@ -1,5 +1,12 @@
 .section {
   margin-bottom: 36px;
+  position: relative;
+}
+
+.section h2 {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
 }
 
 .text {
@@ -10,6 +17,50 @@
   letter-spacing: -0.04em;
   text-align: center;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.04em;
+  }
 }
 
+.container {
+  @media screen and (min-width: 768px) {
+    /* position: relative; */
 
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 24px;
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 48px;
+    margin-bottom: 120px;
+  }
+}
+
+.container h2,
+.container ul {
+  @media screen and (min-width: 768px) {
+    flex: 1;
+    max-width: calc(50% - 12px);
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: calc(50% - 24px);
+  }
+}
+
+.wrapper {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: calc(50% - 12px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: calc(50% - 24px);
+  }
+}
