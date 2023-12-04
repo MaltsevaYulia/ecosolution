@@ -125,7 +125,7 @@
     content: '';
     background-image: url('../../assets/values/value1-768px-1x-min.jpg');
     background-repeat: no-repeat;
-    /* background-size: contain; */
+
     grid-column: 3 / span 2; 
     grid-row: 1;
     position: absolute;
@@ -139,7 +139,7 @@
     content: '';
     background-image: url('../../assets/values/value2-768px-1x-min.jpg');
     background-repeat: no-repeat;
-    /* background-size: contain; */
+  
     grid-column: 1 / span 2;
     grid-row: 2;
     position: absolute;
@@ -164,14 +164,14 @@
   .list::before {
     background-image: url('../../assets/values/value1-1280px-1x-min.jpg');
     height: 339px;
-    /* background-size: cover; */
+    
   }
 
   .list::after {
     content: '';
     background-image: url('../../assets/values/value2-1280px-1x-min.jpg');
     height: 339px;
-    /* background-size: cover; */
+   
   }
 }
 

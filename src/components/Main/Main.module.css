@@ -1,6 +1,4 @@
-.section {
-  /* margin-top: 222px; */
-}
+
 
 .border {
   border-bottom: 1px solid var(--green-color);
@@ -70,7 +68,7 @@
   line-height: 19px;
   letter-spacing: -0.04em;
   color: var(--text-color);
-  /* font-style: normal; */
+  
 }
 
 .wrapper button {

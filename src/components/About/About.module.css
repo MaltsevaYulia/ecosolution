@@ -4,7 +4,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 100px;
   }
-   @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 124px;
   }
 }
@@ -19,7 +19,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
- 
 }
 
 .article {
@@ -33,9 +32,9 @@
   }
 }
 
-.section h2,
-.article {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .section h2,
+  .article {
     flex: 1;
     max-width: calc(50% - 38.5px);
     box-sizing: border-box;
