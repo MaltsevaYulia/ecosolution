@@ -12,13 +12,6 @@ const Services = () => {
   const [activItem, setActivItem] = useState('');
 
 
-  const handleActivItem = text => {
-    setActivItem(text);
-  };
-  const handleInActivItem = () => {
-    setActivItem('');
-  };
-
   return (
     <section id="service" className={css.section}>
       <h2 className="title">
@@ -67,8 +60,10 @@ const Services = () => {
               <li
                 key={item}
                 className={css.item}
-                onMouseEnter={() => handleActivItem(item)}
-                onMouseLeave={handleInActivItem}
+               
+                onClick={() =>
+                  item === activItem ? setActivItem('') : setActivItem(item)
+                }
               >
                 <p className={css.itemText}>{item}</p>
               </li>

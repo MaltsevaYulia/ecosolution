@@ -5,7 +5,6 @@ import css from './Customers.module.css';
 
 const Customers = () => {
   const [images, setImages] = useState([]);
-  console.log('🚀 ~ Customers ~ images:', images);
 
   useEffect(() => {
     const loadImage = async img => {

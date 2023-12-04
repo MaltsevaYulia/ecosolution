@@ -6,11 +6,10 @@ import { useMediaQuery } from '@react-hook/media-query';
 
 const TeamList = () => {
   const [images, setImages] = useState([]);
-  console.log('🚀TeamList ~ images:', images);
+  
   const isScreenSmall = useMediaQuery('(max-width: 767px)');
   const isScreenMedium = useMediaQuery('(min-width: 768px)');
   const isScreenBig = useMediaQuery('(min-width: 1280px)');
-  
 
   useEffect(() => {
     const getScreenSize = () => {
@@ -61,7 +60,7 @@ const TeamList = () => {
                   alt={name}
                   srcSet={`${loadedImage.src_1x} 1x, ${loadedImage.src_1x} 2x`}
                   src={loadedImage.src_1x}
-                  width={isScreenBig ? '290' : '168'}
+                  width={isScreenBig ? '274' : '148'}
                   height={isScreenBig ? '290' : '168'}
                 />
               )}
@@ -76,39 +75,6 @@ const TeamList = () => {
           );
         })}
       </ul>
-      {/* test */}
-      {/* <ul className={css.team}>
-        {team1.map(({ id, name, position, img }) => {
-          console.log('🚀 ~ {team1.map ~ img:', img);
-
-          return (
-            <li className={css.item} key={id}>
-              {img && (
-                <picture>
-                  <source
-                    type="image/jpeg"
-                    srcSet={`${img.img320px1x} 480w, ${img.img768px1x} 768w, ${img.img1280px1x} 1280w`}
-                    sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1280px"
-                  />
-                  <source
-                    type="image/jpeg"
-                    srcSet={`${img.img320px2x} 480w, ${img.img768px2x} 768w, ${img.img1280px2x} 1280w`}
-                    sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1280px"
-                  />
-                  <img src={img.img1280px1x} alt={name} />
-                </picture>
-              )}
-
-              <div className={css.card}>
-                <h3 className={css.title}>{name}</h3>
-                <p lang="en" className={css.text}>
-                  {position}
-                </p>
-              </div>
-            </li>
-          );
-        })}
-      </ul> */}
     </>
   );
 };
