@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktest_softryzen=self.webpackChunktest_softryzen||[]).push([[367],{367:function(e,t,s){e.exports=s.p+"static/media/VictorDunaev1280px1x.7801f95b3923cd3438e7.jpg"}}]);
