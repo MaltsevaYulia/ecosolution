@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-SoftRyzen/static/css/main.eeac7a41.css",
-    "main.js": "/test-SoftRyzen/static/js/main.ddbb16b0.js",
+    "main.css": "/test-SoftRyzen/static/css/main.261798ff.css",
+    "main.js": "/test-SoftRyzen/static/js/main.7f544834.js",
     "static/js/739.026f2b71.chunk.js": "/test-SoftRyzen/static/js/739.026f2b71.chunk.js",
     "static/js/573.b7a31e90.chunk.js": "/test-SoftRyzen/static/js/573.b7a31e90.chunk.js",
     "static/js/184.0042df80.chunk.js": "/test-SoftRyzen/static/js/184.0042df80.chunk.js",
@@ -32,11 +32,11 @@
     "static/media/slide1-1280-1x.jpg": "/test-SoftRyzen/static/media/slide1-1280-1x.6fa4e05520acc764ede2.jpg",
     "static/media/CASaygonText-Bold.ttf": "/test-SoftRyzen/static/media/CASaygonText-Bold.2a7b0e4335c192f07917.ttf",
     "static/media/Hero1x1280px.jpg": "/test-SoftRyzen/static/media/Hero1x1280px.008e3bbb090540aba46b.jpg",
-    "static/media/img1x.jpg": "/test-SoftRyzen/static/media/img1x.4bb862ab7f740e485ebf.jpg",
     "static/media/Hero2x360px.jpg": "/test-SoftRyzen/static/media/Hero2x360px.1af6af1859a980164d4a.jpg",
     "static/media/Hero1x768px.jpg": "/test-SoftRyzen/static/media/Hero1x768px.58d16e6909f99357ecbd.jpg",
     "static/media/value1-1280px-1x-min.jpg": "/test-SoftRyzen/static/media/value1-1280px-1x-min.7a1dbe97a72be94cafdc.jpg",
     "static/media/value2-1280px-1x-min.jpg": "/test-SoftRyzen/static/media/value2-1280px-1x-min.c4fc6eefe23383646a3c.jpg",
+    "static/media/img1x.jpg": "/test-SoftRyzen/static/media/img1x.77da70a19194d46df9f7.jpg",
     "static/media/Hero1x360px.jpg": "/test-SoftRyzen/static/media/Hero1x360px.ae5fb73ed9a8012d64e1.jpg",
     "static/media/Fontspring-DEMO-allroundgothic-thick.otf": "/test-SoftRyzen/static/media/Fontspring-DEMO-allroundgothic-thick.a3cc674d03213c20323d.otf",
     "static/media/value1-768px-1x-min.jpg": "/test-SoftRyzen/static/media/value1-768px-1x-min.e489c1ed89d44e3cfdf6.jpg",
@@ -51,11 +51,11 @@
     "static/media/add16.svg": "/test-SoftRyzen/static/media/add16.18018ecb7520511c1ef7.svg",
     "static/media/minus28.svg": "/test-SoftRyzen/static/media/minus28.8e03c9f5a3a6392e6804.svg",
     "static/media/minus16.svg": "/test-SoftRyzen/static/media/minus16.06823d08b7149db9f2ad.svg",
-    "main.eeac7a41.css.map": "/test-SoftRyzen/static/css/main.eeac7a41.css.map",
-    "main.ddbb16b0.js.map": "/test-SoftRyzen/static/js/main.ddbb16b0.js.map"
+    "main.261798ff.css.map": "/test-SoftRyzen/static/css/main.261798ff.css.map",
+    "main.7f544834.js.map": "/test-SoftRyzen/static/js/main.7f544834.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeac7a41.css",
-    "static/js/main.ddbb16b0.js"
+    "static/css/main.261798ff.css",
+    "static/js/main.7f544834.js"
   ]
 }
