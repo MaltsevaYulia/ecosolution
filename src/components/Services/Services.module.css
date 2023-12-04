@@ -97,17 +97,17 @@
   transform: rotate(0deg);
 }
 
-
-  @media screen and (min-width: 768px) {
-    .wrapper {
+@media screen and (min-width: 768px) {
+  .wrapper {
     display: flex;
     flex-direction: row-reverse;
     gap: 24px;
     margin-bottom: 100px;
-  }}
-  
-  @media screen and (min-width: 1280px) {
-    .wrapper {
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
     margin-bottom: 120px;
   }
 }

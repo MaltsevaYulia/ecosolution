@@ -25,16 +25,17 @@
   }
 }
 
-.container {
-  @media screen and (min-width: 768px) {
-    /* position: relative; */
-
+@media screen and (min-width: 768px) {
+  .container {
     display: flex;
     flex-direction: row-reverse;
     gap: 24px;
     margin-bottom: 100px;
   }
-  @media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
     gap: 48px;
     margin-bottom: 120px;
   }
