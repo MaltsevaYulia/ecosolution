@@ -30,7 +30,8 @@
 }
 
 .header.active {
-  background-color: var(--orange-color);
+  /* background-color: var(--orange-color); */
+ background: linear-gradient(to bottom, #ee763d, var(--green-color));
 }
 
 .container {
@@ -87,7 +88,7 @@
 
 .link:hover,
 .link:focus {
- background: var(--gradient-green);
+  background: var(--gradient-green);
 }
 
 .linkText {
