@@ -31,16 +31,14 @@
   letter-spacing: -0.04em;
   text-align: left;
   color: var(--text-color-secondary);
+}
 
-  @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+  .input {
     font-size: 20px;
     line-height: 24px;
   }
 }
-
-/* input {
-  margin-bottom: 28px;
-} */
 
 textarea {
   margin-bottom: 16px;

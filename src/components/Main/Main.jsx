@@ -7,6 +7,7 @@ import Hero1x1280px from '../../assets/img/Hero1x1280px.jpg';
 import Hero2x1280px from '../../assets/img/Hero2x1280px.jpg';
 import css from './Main.module.css';
 import ButtonArrow from 'components/ButtonArrow/ButtonArrow';
+import { handleScroll } from 'helpers/hendleScroll';
 
 const Main = () => {
   return (
@@ -19,7 +20,11 @@ const Main = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </p>
-          <ButtonArrow text="Learn more" type="button" />
+          <ButtonArrow
+            text="Learn more"
+            type="button"
+            onClick={() => handleScroll('cases')}
+          />
         </div>
       </div>
       <address className={css.contacts}>

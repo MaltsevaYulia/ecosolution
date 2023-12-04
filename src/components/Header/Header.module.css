@@ -31,7 +31,7 @@
 
 .header.active {
   /* background-color: var(--orange-color); */
- background: linear-gradient(to bottom, #ee763d, var(--green-color));
+ background: linear-gradient(to bottom, #ee763d,var(--background-grey), var(--green-color));
 }
 
 .container {
@@ -53,17 +53,27 @@
   text-decoration: none;
   border: none;
   border-radius: 500px;
-  background-color: #dcefd8;
+  background-color: var(--background-grey);
   padding: 0;
   transition: all 250ms ease;
-  @media screen and (min-width: 768px) {
-  }
+ 
+}
+
+.header.active .btn{
+    background-color: var(--green-color);
 }
 
 .btn:hover,
 .btn:focus {
   background-color: var(--green-color);
 }
+
+.header.active .btn:hover,
+.btn:focus {
+   background-color: var(--background-grey);
+}
+
+
 
 .link {
   display: flex;
@@ -83,12 +93,13 @@
   border: 1px solid var(--green-color);
   color: var(--text-color);
   background-color: var(--green-color);
-  /* transition: all 250ms ease; */
+  transition: all 250ms ease;
 }
 
 .link:hover,
 .link:focus {
-  background: var(--gradient-green);
+  /* background: var(--gradient-green); */
+  background-color:var(--background-grey)
 }
 
 .linkText {
