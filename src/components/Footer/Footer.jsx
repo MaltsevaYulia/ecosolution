@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from 'components/Logo/Logo';
 import sprite from 'assets/sprite.svg';
 import css from './Footer.module.css';
+import { handleScroll } from 'helpers/hendleScroll';
 
 const Footer = () => {
   return (
@@ -31,11 +32,15 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <a href="#main" className={css.btn}>
+        <button
+          type="button"
+          onClick={() => handleScroll('main')}
+          className={css.btn}
+        >
           <svg className={css.iconArrow} width="32" height="32">
             <use href={`${sprite}#icon-arrow-right-green`} />
           </svg>
-        </a>
+        </button>
       </div>
       <div className={css.wrapper}>
         <a

@@ -1,11 +1,9 @@
 import React from 'react';
-import { useMediaQuery } from '@react-hook/media-query';
 import { values } from 'constants/values';
 import sprite from 'assets/sprite.svg';
 import css from './Values.module.css';
 
 const Values = () => {
-  const isScreenBig = useMediaQuery('(min-width: 768px)');
 
   return (
     <section className={css.section}>

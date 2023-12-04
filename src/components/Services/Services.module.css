@@ -20,11 +20,81 @@
   color: var(--text-color);
   background-color: var(--background-grey);
   padding: 52px 18px;
+
   @media screen and (min-width: 768px) {
     font-size: 40px;
     line-height: 40px;
     padding: 51px 29px;
   }
+
+  @media screen and (min-width: 1280px) {
+    cursor: pointer;
+    height: 596px;
+    font-size: 54px;
+    line-height: 54px;
+    text-align: left;
+    padding: 106px 72px;
+    transition: all 250ms ease;
+  }
+}
+
+.box {
+  background-color: var(--text-color);
+  padding-top: 42px;
+  padding-left: 42px;
+  padding-bottom: 67px;
+  padding-right: 48px;
+}
+
+.boxTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.boxTitle {
+  font-family: 'Oswald';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: var(--white-color);
+}
+
+.boxBtn {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: var(--text-color);
+}
+
+.boxImg {
+  width: 348px;
+  height: 348px;
+
+  margin: auto;
+  margin-bottom: 38px;
+}
+
+.readMore {
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  text-align: center;
+
+  color: var(--white-color);
+}
+
+.iconArrow {
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+.boxBtn:hover .iconArrow {
+  transform: rotate(0deg);
 }
 
 .wrapper {
@@ -40,7 +110,8 @@
 }
 
 .text,
-.list {
+.listWrapper,
+.box {
   @media screen and (min-width: 768px) {
     flex: 1;
     max-width: calc(50% - 12px);
@@ -50,24 +121,38 @@
   }
 }
 
+.listWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../assets/servises/Energy.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 36px;
+  }
+}
+
 .list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-bottom: 36px;
-  background-image: url(../../assets/servises/Energy.png);
-  background-repeat: no-repeat;
-  background-position: center;
+
   @media screen and (max-width: 767px) {
     padding-top: 25px;
     padding-bottom: 25px;
   }
+
+  @media screen and (min-width: 768px) {
+    align-items: start;
+  }
 }
 
 .item {
-    color: var(--text-color);
+  color: var(--text-color);
   @media screen and (min-width: 1280px) {
     cursor: pointer;
   }
@@ -80,31 +165,49 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .itemText:hover::before,
-  .itemText:focus::before {
-    content: url('../../assets/servises/arrow-right.png'); /* Замените путь на реальный путь к вашему файлу SVG */
-    display: block;
-    position: absolute;
-    left: -28px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-
 .itemText {
-    position: relative;
+  position: relative;
   font-family: 'Fira Sans';
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.04em;
   text-align: justify;
-  
+
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 29px;
     text-align: justify;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .itemText:hover::before,
+  .itemText:focus::before {
+    content: url('../../assets/servises/arrow-right.png');
+    display: block;
+
+    position: absolute;
+    top: 50%;
+
+    right: calc(100% + 12px);
+    transform: translateY(-50%);
+  }
+
+  .itemText:hover {
+    transform: translateX(28px);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

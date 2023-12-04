@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { customers } from 'constants/customers';
 
 import css from './Customers.module.css';
-import sprite from 'assets/sprite.svg';
-import audi from 'assets/customers/audi.png';
-import bosch from 'assets/customers/bosch.png';
 
 const Customers = () => {
   const [images, setImages] = useState([]);

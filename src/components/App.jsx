@@ -1,5 +1,5 @@
 import Main from './Main/Main';
-import Header from "./Header/Header";
+import Header from './Header/Header';
 import About from './About/About';
 import Values from './Values/Values';
 import Electricity from './Electricity/Electricity';
@@ -14,15 +14,17 @@ export const App = () => {
   return (
     <>
       <Header />
-      <Main />
-      <About />
-      <Values />
-      <Electricity />
-      <Services />
-      <Cases />
-      <FAQ />
-      <Customers />
-      <ContactUs />
+      <main>
+        <Main />
+        <About />
+        <Values />
+        <Electricity />
+        <Services />
+        <Cases />
+        <FAQ />
+        <Customers />
+        <ContactUs />
+      </main>
       <Footer />
     </>
   );

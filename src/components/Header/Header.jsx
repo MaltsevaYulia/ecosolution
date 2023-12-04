@@ -5,21 +5,20 @@ import sprite from 'assets/sprite.svg';
 import css from './Header.module.css';
 import { useState } from 'react';
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
-
+import Modal from 'components/Modal/Modal';
+import { handleScroll } from 'helpers/hendleScroll';
 
 const Header = () => {
   const [isChangeColor, setIsChangeColor] = useState(false);
-  const isBigScreen = useMediaQuery('(min-width: 768px)');
+  const isScreenMedium = useMediaQuery('(min-width: 768px)');
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
+
   const openBurgerMenu = () => {
-      console.log("🚀 ~ openBurgerMenu ~ ")
     setIsBurgerOpen(true);
   };
 
-
   const closeBurgerMenu = () => {
-    console.log('🚀 ~ closeBurgerMenu ~ ');
     setIsBurgerOpen(false);
   };
 
@@ -35,6 +34,7 @@ const Header = () => {
 
   return (
     <header
+      id="header"
       className={isChangeColor ? `${css.header} ${css.active}` : css.header}
     >
       <Logo />
@@ -45,25 +45,22 @@ const Header = () => {
           </svg>
         </button>
 
-        {isBigScreen && (
-          <a href="#contactUs" className={css.link}>
+        {isScreenMedium && (
+          <button
+            type="button"
+            onClick={() => handleScroll('contactUs')}
+            className={css.link}
+          >
             <span className={css.linkText}>Get in touch</span>
             <span className={css.round}></span>
-          </a>
+          </button>
         )}
       </div>
-      {isBurgerOpen && <BurgerMenu closeBurgerMenu={closeBurgerMenu} />}
-      {/* <div id="burger">
-        <BurgerMenu
-          pageWrapId={'page-wrap'}
-          outerContainerId={'burger'}
-          right
-        />
-
-        <div id="page-wrap">
-          <h1>Click to show menu</h1>
-        </div>
-      </div> */}
+      {isBurgerOpen && (
+        <Modal close={closeBurgerMenu}>
+          <BurgerMenu closeBurgerMenu={closeBurgerMenu} />
+        </Modal>
+      )}
     </header>
   );
 };

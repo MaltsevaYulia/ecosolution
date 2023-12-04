@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import { AccordionItem } from './AccordionItem';
 import './Accordion.css';
+import { useEffect } from 'react';
 
 export const Accordion = ({ faqList }) => {
   const [openId, setId] = useState(null);
 
+  useEffect(() => {
+   setId(0);
+  }, [])
+  
+
   return (
     <ul className="accordion">
       {faqList.map((faqItem, id) => {
+        
         return (
           <AccordionItem
             onClick={() => (id === openId ? setId(null) : setId(id))}

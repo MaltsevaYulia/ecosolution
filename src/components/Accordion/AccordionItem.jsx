@@ -1,24 +1,15 @@
 import React, { useRef } from 'react';
 
-import sprite from 'assets/sprite.svg';
-
 export const AccordionItem = ({ faqItem, onClick, isOpen }) => {
   const itemRef = useRef(null);
 
   return (
     <li className="accordion-item">
-      <button className="accordion-header" onClick={() => onClick()}>
-        {!isOpen && (
-          <svg width="16" height="16" className="icon-accordion">
-            <use href={`${sprite}#icon-add`} />
-          </svg>
-        )}
-        {isOpen && (
-          <svg width="16" height="16" className="icon-accordion">
-            <use href={`${sprite}#icon-minus`} />
-          </svg>
-        )}
-        <span className='question'>{faqItem.q}</span>
+      <button
+        className={`accordion-header ${isOpen ? 'active' : ''}`}
+        onClick={() => onClick()}
+      >
+        <span className="question">{faqItem.q}</span>
       </button>
       <div
         className="accordion-collapse"

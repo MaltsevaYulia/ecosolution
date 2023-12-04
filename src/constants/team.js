@@ -1,24 +1,27 @@
+import { nanoid } from 'nanoid';
+
+
 export const team = [
   {
-    id: 1,
+    id: nanoid(),
     name: 'Andrii Duda',
     position: 'CEO',
     img: 'AndriiDuda',
   },
   {
-    id: 2,
+    id: nanoid(),
     name: 'Yurii Turchenko',
     position: 'Technology officer',
     img: 'YuriiTurchenko',
   },
   {
-    id: 3,
+    id: nanoid(),
     name: 'Vitalii Shevchenko',
     position: 'Director',
     img: 'VitaliiShevchenko',
   },
   {
-    id: 4,
+    id: nanoid(),
     name: 'Victor Dunaev',
     position: 'Senior engineer',
     img: 'VictorDunaev',

@@ -8,3 +8,47 @@
     margin-bottom: 127px;
   }
 }
+
+.container {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: var(--green-color);
+  }
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: 768px) {
+    column-gap: 126px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    column-gap: 193px;
+  }
+}

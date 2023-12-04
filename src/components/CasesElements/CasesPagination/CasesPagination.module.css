@@ -1,0 +1,30 @@
+.container {
+    width: 72px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+        width: 74px;
+    }
+}
+
+.active {
+    color: #173d33;
+    text-align: justify;
+    font-family: Fira Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -1.12px;
+}
+
+.static {
+    color: rgba(23, 61, 51, 0.25);
+    font-family: Fira Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -1.12px;
+}

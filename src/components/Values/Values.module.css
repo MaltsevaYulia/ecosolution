@@ -104,7 +104,7 @@
 @media screen and (min-width: 768px) {
   .list {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .item:nth-child(3) {
@@ -118,7 +118,6 @@
   }
 
   .item {
-   
     height: 197px;
   }
 
@@ -127,8 +126,8 @@
     background-image: url('../../assets/values/value1-768px-1x-min.jpg');
     background-repeat: no-repeat;
     /* background-size: contain; */
-    grid-column: 3 / span 2; /* Занимаем 3 и 4 столбцы */
-    grid-row: 1; 
+    grid-column: 3 / span 2; 
+    grid-row: 1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -141,8 +140,8 @@
     background-image: url('../../assets/values/value2-768px-1x-min.jpg');
     background-repeat: no-repeat;
     /* background-size: contain; */
-    grid-column: 1 / span 2; 
-    grid-row: 2; 
+    grid-column: 1 / span 2;
+    grid-row: 2;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -157,8 +156,8 @@
   }
 
   .item {
+    padding: 48px 24px;
     box-sizing: border-box;
- 
     height: 339px;
   }
 
