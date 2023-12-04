@@ -1,6 +1,5 @@
+import React, { useState } from 'react';
 import { services } from 'constants/services';
-import React from 'react';
-import { useState } from 'react';
 import sprite from 'assets/sprite.svg';
 import css from './Services.module.css';
 import img1x from 'assets/servises/img1x.jpg';
@@ -10,7 +9,6 @@ import { useMediaQuery } from '@react-hook/media-query';
 const Services = () => {
   const isScreenBig = useMediaQuery('(min-width: 1280px)');
   const [activItem, setActivItem] = useState('');
-
 
   return (
     <section id="service" className={css.section}>
@@ -59,8 +57,9 @@ const Services = () => {
             {services.map(item => (
               <li
                 key={item}
-                className={css.item}
-               
+                className={`${css.item} ${
+                  item === activItem ? css.activeItem : ''
+                } `}
                 onClick={() =>
                   item === activItem ? setActivItem('') : setActivItem(item)
                 }

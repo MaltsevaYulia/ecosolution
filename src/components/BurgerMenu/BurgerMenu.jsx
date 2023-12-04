@@ -18,7 +18,7 @@ const BurgerMenu = ({ closeBurgerMenu }) => {
         <nav className={css.nav}>
           <ul className={css.list}>
             {navBarTitle.map(({ title, id }) => (
-              <li>
+              <li key={id}>
                 <button
                   type="button"
                   onClick={() => handleScroll(id)}

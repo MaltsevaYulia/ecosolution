@@ -161,6 +161,11 @@
 
 .item:hover,
 .item:focus {
+  /* @media screen and (min-width: 1280px) {
+    color: var(--green-color);
+  } */
+}
+.item.activeItem {
   @media screen and (min-width: 1280px) {
     color: var(--green-color);
   }
@@ -183,8 +188,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .itemText:hover::before,
-  .itemText:focus::before {
+  .item.activeItem .itemText::before,
+  .item.activeItem .itemText::before {
     content: url('../../assets/servises/arrow-right.png');
     display: block;
 
@@ -195,11 +200,10 @@
     transform: translateY(-50%);
   }
 
-  .itemText:hover {
+  .item.activeItem .itemText {
     transform: translateX(28px);
   }
 }
-
 
 .visually-hidden {
   position: absolute;
