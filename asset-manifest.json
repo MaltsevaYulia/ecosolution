@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-SoftRyzen/static/css/main.cab67342.css",
-    "main.js": "/test-SoftRyzen/static/js/main.3a1c0c66.js",
+    "main.css": "/test-SoftRyzen/static/css/main.716cb8fa.css",
+    "main.js": "/test-SoftRyzen/static/js/main.f215ed55.js",
     "static/js/739.187ab37e.chunk.js": "/test-SoftRyzen/static/js/739.187ab37e.chunk.js",
     "static/js/573.75c86482.chunk.js": "/test-SoftRyzen/static/js/573.75c86482.chunk.js",
     "static/js/184.5cc683e2.chunk.js": "/test-SoftRyzen/static/js/184.5cc683e2.chunk.js",
@@ -47,11 +47,11 @@
     "static/media/add16.svg": "/test-SoftRyzen/static/media/add16.18018ecb7520511c1ef7.svg",
     "static/media/minus28.svg": "/test-SoftRyzen/static/media/minus28.8e03c9f5a3a6392e6804.svg",
     "static/media/minus16.svg": "/test-SoftRyzen/static/media/minus16.06823d08b7149db9f2ad.svg",
-    "main.cab67342.css.map": "/test-SoftRyzen/static/css/main.cab67342.css.map",
-    "main.3a1c0c66.js.map": "/test-SoftRyzen/static/js/main.3a1c0c66.js.map"
+    "main.716cb8fa.css.map": "/test-SoftRyzen/static/css/main.716cb8fa.css.map",
+    "main.f215ed55.js.map": "/test-SoftRyzen/static/js/main.f215ed55.js.map"
   },
   "entrypoints": [
-    "static/css/main.cab67342.css",
-    "static/js/main.3a1c0c66.js"
+    "static/css/main.716cb8fa.css",
+    "static/js/main.f215ed55.js"
   ]
 }
