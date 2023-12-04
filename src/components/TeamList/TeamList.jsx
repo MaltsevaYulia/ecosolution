@@ -10,6 +10,7 @@ const TeamList = () => {
   const isScreenSmall = useMediaQuery('(max-width: 767px)');
   const isScreenMedium = useMediaQuery('(min-width: 768px)');
   const isScreenBig = useMediaQuery('(min-width: 1280px)');
+  
 
   useEffect(() => {
     const getScreenSize = () => {
@@ -23,6 +24,7 @@ const TeamList = () => {
         return '1280';
       }
     };
+
     const loadImage = async img => {
       try {
         const imageModule1x = await import(
@@ -59,6 +61,8 @@ const TeamList = () => {
                   alt={name}
                   srcSet={`${loadedImage.src_1x} 1x, ${loadedImage.src_1x} 2x`}
                   src={loadedImage.src_1x}
+                  width={isScreenBig ? '290' : '168'}
+                  height={isScreenBig ? '290' : '168'}
                 />
               )}
 

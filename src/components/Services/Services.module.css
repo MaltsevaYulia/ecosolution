@@ -97,27 +97,28 @@
   transform: rotate(0deg);
 }
 
-.wrapper {
+
   @media screen and (min-width: 768px) {
+    .wrapper {
     display: flex;
     flex-direction: row-reverse;
     gap: 24px;
     margin-bottom: 100px;
-  }
+  }}
+  
   @media screen and (min-width: 1280px) {
+    .wrapper {
     margin-bottom: 120px;
   }
 }
 
-.text,
-.listWrapper,
-.box {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .text,
+  .listWrapper,
+  .box {
     flex: 1;
     max-width: calc(50% - 12px);
     box-sizing: border-box;
-  }
-  @media screen and (min-width: 1280px) {
   }
 }
 
