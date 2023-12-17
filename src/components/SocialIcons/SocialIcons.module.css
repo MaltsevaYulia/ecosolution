@@ -2,8 +2,6 @@
   display: flex;
   gap: 8px;
   background-color: transparent;
-
- 
 }
 
 .icon {
@@ -11,4 +9,8 @@
   fill: transparent;
   width: 24px;
   height: 24px;
+}
+
+.icon:hover, icon:focus {
+  stroke: var(--green-color);
 }

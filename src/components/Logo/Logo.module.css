@@ -14,6 +14,10 @@
   text-align: left;
 }
 
+.link:hover .logo, .link:focus .logo{
+  color: var(--green-color);
+} 
+
 .LogoP {
   display: flex;
   flex-direction: column;

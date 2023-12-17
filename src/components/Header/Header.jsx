@@ -7,12 +7,12 @@ import { useState } from 'react';
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import Modal from 'components/Modal/Modal';
 import { handleScroll } from 'helpers/hendleScroll';
+import ButtonRound from 'components/ButtonRound/ButtonRound';
 
 const Header = () => {
   const [isChangeColor, setIsChangeColor] = useState(false);
   const isScreenMedium = useMediaQuery('(min-width: 768px)');
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
-
 
   const openBurgerMenu = () => {
     setIsBurgerOpen(true);
@@ -46,14 +46,11 @@ const Header = () => {
         </button>
 
         {isScreenMedium && (
-          <button
+          <ButtonRound
+            text="Get in touch"
             type="button"
             onClick={() => handleScroll('contactUs')}
-            className={css.link}
-          >
-            <span className={css.linkText}>Get in touch</span>
-            <span className={css.round}></span>
-          </button>
+          />
         )}
       </div>
       {isBurgerOpen && (

@@ -89,7 +89,7 @@
   }
 }
 
-.btn {
+/* .btn {
   border: none;
   cursor: pointer;
   border-color: var(--background-grey);
@@ -102,6 +102,36 @@
 
 .btn:hover .iconArrow {
   transform: rotate(0deg);
+} */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: inherit;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .btn:focus{
+  background-color: var(--text-color);
+}
+
+.iconArrow {
+  fill: var(--green-color);
+  stroke: var(--text-color);
+  transform: rotate(45deg);
+  transition: stroke 0.3s ease;
+}
+
+.btn:hover .iconArrow, .btn:focus .iconArrow {
+stroke: var(--green-color);
 }
 
 .textWrapper {

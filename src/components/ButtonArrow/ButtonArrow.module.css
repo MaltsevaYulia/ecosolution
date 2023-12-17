@@ -15,15 +15,16 @@
   border: 1px solid var(--green-color);
   color: var(--text-color);
   background-color: inherit;
-
+  transition: all 250ms ease;
   @media screen and (min-width: 768px) {
     margin: 0;
-    
   }
-
- 
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: var(--text-color);
+}
 
 .btnText {
   font-family: 'Fira Sans';
@@ -32,9 +33,16 @@
   line-height: 18px;
   letter-spacing: -0.04em;
   text-align: left;
+  transition: all 250ms ease;
+}
+
+.btn:hover .btnText,
+.btn:focus .btnText {
+  color: var(--green-color);
 }
 
 .icon {
   width: 32px;
   height: 32px;
+  transition: all 250ms ease;
 }

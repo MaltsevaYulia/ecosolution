@@ -100,6 +100,12 @@
   fill: var(--background-primary);
   width: 24px;
   height: 24px;
+  transition: stroke 0.3s ease;
+}
+
+.icon:hover,
+icon:focus {
+  stroke: var(--green-color);
 }
 
 .social {

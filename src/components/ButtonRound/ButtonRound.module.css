@@ -7,6 +7,7 @@
 
   cursor: pointer;
   text-decoration: none;
+  border:none;
   padding-top: 10px;
   padding-right: 16px;
   padding-bottom: 10px;
@@ -17,11 +18,12 @@
   border: 1px solid var(--green-color);
   color: var(--text-color);
   background-color: var(--green-color);
+  transition: all 250ms ease;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--gradient-green);
+  background-color: var(--background-color);
 }
 
 .btnText {
@@ -31,13 +33,21 @@
   line-height: 19px;
   letter-spacing: -0.04em;
   text-align: left;
+  transition: all 250ms ease;
 }
 
-.round {
-  display: block;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: var(--text-color);
+.btn:hover .btnText,
+.btn:focus .btnText{
+  color: var(--green-color);
 }
 
+.iconGoContact {
+  fill:var(--text-color);
+  transition: all 250ms ease;
+}
+
+.btn:hover .iconGoContact,
+.btn:focus .iconGoContact{
+   fill: var(--green-color);
+   
+}

@@ -28,16 +28,14 @@
   transition: stroke 0.3s ease;
 }
 
-.buttonWrap button:hover {
-  @media screen and (min-width: 1280px) {
-    border: 1px solid var(--green-color);
-  }
+.buttonWrap button:hover  {
+border-color: var(--green-color);
+  
 }
 
 .buttonWrap button:hover .iconArrow {
-  @media screen and (min-width: 1280px) {
-    stroke: var(--green-color);
-  }
+  stroke: var(--green-color);
+  
 }
 
 .buttonWrap button:active {

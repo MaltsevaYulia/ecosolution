@@ -36,9 +36,10 @@ const Footer = () => {
           type="button"
           onClick={() => handleScroll('main')}
           className={css.btn}
+          aria-label="go to main section"
         >
-          <svg className={css.iconArrow} width="32" height="32">
-            <use href={`${sprite}#icon-arrow-right-green`} />
+          <svg className={css.iconArrow} width="16" height="16">
+            <use href={`${sprite}#icon-arrow-up`} />
           </svg>
         </button>
       </div>

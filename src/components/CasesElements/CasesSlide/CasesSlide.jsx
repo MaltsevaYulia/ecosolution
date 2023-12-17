@@ -17,8 +17,11 @@ const CasesSlide = ({ item }) => {
         <div className={css.titleWraper}>
           <h3 className={css.infoTitle}>{item.title}</h3>
           <button className={css.btn}>
-            <svg className={css.iconArrow} width="60" height="60">
+            {/* <svg className={css.iconArrow} width="60" height="60">
               <use href={`${sprite}#icon-arrow-right-green`} />
+            </svg> */}
+            <svg className={css.iconArrow} width="28" height="28">
+              <use href={`${sprite}#icon-arrow-up`} />
             </svg>
           </button>
         </div>
