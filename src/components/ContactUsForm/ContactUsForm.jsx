@@ -1,8 +1,12 @@
-import ButtonArrow from 'components/ButtonArrow/ButtonArrow';
 import React from 'react';
+import toast from 'react-hot-toast';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import ButtonArrow from 'components/ButtonArrow/ButtonArrow';
 import css from './ContactUsForm.module.css';
+
+const notify = () => toast.success('Successfully');
+const LS="formValues"
 
 const validationSchema = Yup.object({
   fullName: Yup.string().required('Full Name is required'),
@@ -27,8 +31,11 @@ const ContactUsForm = () => {
       message: '',
     },
     validationSchema,
-    onSubmit: values => {
+    onSubmit: (values,{ resetForm }) => {
       console.log('Form submitted with values:', values);
+      localStorage.setItem(LS, JSON.stringify(values));
+      resetForm();
+      notify();
     },
   });
 
