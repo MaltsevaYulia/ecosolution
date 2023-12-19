@@ -25,6 +25,7 @@ export const cases = [
       img1x: slide1,
       img2x: slide12x,
     },
+    url: 'https://zahbug.com/en/',
   },
   {
     id: nanoid(),
@@ -35,6 +36,7 @@ export const cases = [
       img1x: slide2,
       img2x: slide22x,
     },
+    url: 'https://www.bosch.com/',
   },
   {
     id: nanoid(),
@@ -48,9 +50,9 @@ export const cases = [
   },
   {
     id: nanoid(),
-    title: 'Kherson Region Private Enterprise “WINDCRAFT TAVRIA”',
+    title: 'Kherson city Private Enterprise “HealthyFarm”',
     text: 'Wind power',
-    date: 'May 2014',
+    date: 'September 2021',
     img: {
       img1x: slide4,
       img2x: slide42x,
@@ -58,9 +60,9 @@ export const cases = [
   },
   {
     id: nanoid(),
-    title: 'Botievskaya wind farm”',
-    text: 'The argest wind farms in Ukraine',
-    date: 'June 2014',
+    title: 'Zaporizhia city Private Enterprise “Biotech”',
+    text: 'Mini nuclear stations',
+    date: 'May 2021',
     img: {
       img1x: slide5,
       img2x: slide52x,

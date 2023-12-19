@@ -32,7 +32,6 @@ const ContactUsForm = () => {
     },
     validationSchema,
     onSubmit: (values,{ resetForm }) => {
-      console.log('Form submitted with values:', values);
       localStorage.setItem(LS, JSON.stringify(values));
       resetForm();
       notify();

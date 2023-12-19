@@ -62,6 +62,7 @@ const ContactUs = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={css.link}
+                  aria-label="go to facebook"
                 >
                   <svg width="24" height="24" className={css.icon}>
                     <use
@@ -76,6 +77,7 @@ const ContactUs = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={css.link}
+                  aria-label="go to instagram"
                 >
                   <svg width="24" height="24" className={css.icon}>
                     <use href={`${sprite}#icon-instagram`} />

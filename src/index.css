@@ -107,6 +107,7 @@ p {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -124,6 +125,12 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
 }
 
 .visually-hidden {
@@ -236,28 +243,3 @@ img {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-/*  */
-
-/* ecosolution */
-
-/* font-family: 'FONTSPRING DEMO - All Round Gothic Thick';
-font-style: normal;
-font-weight: 500;
-font-size: 33px;
-line-height: 40px;
-/* identical to box height */
-/* letter-spacing: -0.04em;
-
-color: #173D33; */
-
-/* GREENERGY FOR LIFE */
-
-/* font-family: 'CA Saygon Text';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 9px;
-/* or 90% */
-/* letter-spacing: -0.04em;
-
-color: #97D28B; */

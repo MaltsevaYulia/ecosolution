@@ -18,6 +18,7 @@ const FAQ = () => {
           text="Contact Us"
           type="button"
           onClick={() => handleScroll('contactUs')}
+          aria-label="go to contact us section"
         />
       </div>
     </section>

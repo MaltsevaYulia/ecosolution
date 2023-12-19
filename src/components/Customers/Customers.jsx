@@ -19,10 +19,10 @@ const Customers = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.link}
+                aria-label={`go to ${name} web site`}
               >
                 <p className={css.brandName}>{name}</p>
                 <img src={img} alt={name} className={css.logo} />
-        
               </a>
             </li>
           );

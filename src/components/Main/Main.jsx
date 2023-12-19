@@ -23,6 +23,7 @@ const Main = () => {
           <ButtonArrow
             text="Learn more"
             type="button"
+            arial-label="go to cases section"
             onClick={() => handleScroll('cases')}
           />
         </div>

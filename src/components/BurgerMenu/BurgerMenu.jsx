@@ -9,7 +9,7 @@ const BurgerMenu = ({ closeBurgerMenu }) => {
   return (
     <div className={css.burgerConteiner}>
       <div>
-        <button className={css.btn} type="button" onClick={closeBurgerMenu}>
+        <button className={css.btn} type="button" onClick={closeBurgerMenu} aria-label="close burger menu">
           <svg className={css.iconClose} width="20" height="20">
             <use href={`${sprite}#icon-close`} />
           </svg>

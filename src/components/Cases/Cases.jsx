@@ -2,10 +2,10 @@ import React, { useRef, useState } from 'react';
 import CasesNav from 'components/CasesElements/CasesNav/CasesNav';
 import CasesPagination from 'components/CasesElements/CasesPagination/CasesPagination';
 import CasesSlider from 'components/CasesElements/CasesSlider/CasesSlider';
-
+import { cases } from 'constants/cases';
 import css from './Cases.module.css';
 
-import { cases } from 'constants/cases';
+
 
 const Cases = () => {
   const reviewsSwiperRef = useRef(null);

@@ -35,12 +35,6 @@
   padding: 0;
   margin-bottom: 4px;
   transition: all 250ms ease;
-  @media screen and (min-width: 768px) {
-  }
-}
-
-.btn:hover,
-.btn:focus {
 }
 
 .btnText {
@@ -51,11 +45,25 @@
   letter-spacing: -0.04em;
   text-align: left;
   color: var(--white-color);
+  transition: all 250ms ease;
+}
+
+.btn:hover .btnText,
+.btn:focus .btnText {
+  color: var(--green-color);
 }
 
 .iconClose {
   width: 20px;
   height: 20px;
+  stroke: var(--white-color);
+  transition: all 250ms ease;
+}
+
+.btn:hover .iconClose,
+.btn:focus .iconClose {
+  stroke: var(--green-color);
+  
 }
 
 .nav {
