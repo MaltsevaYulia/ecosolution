@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktest_softryzen=self.webpackChunktest_softryzen||[]).push([[739],{739:function(t,e,s){t.exports=s.p+"static/media/AndriiDuda1280px1x.ad2937a573f9fa722264.jpg"}}]);
