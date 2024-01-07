@@ -25,7 +25,7 @@ const About = () => {
           </span>
         </article>
       </div>
-      <TeamList/>
+     
     </section>
   );
 };
