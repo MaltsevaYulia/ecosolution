@@ -1,4 +1,3 @@
-import TeamList from 'components/TeamList/TeamList';
 import React from 'react';
 import css from "./About.module.css"
 
